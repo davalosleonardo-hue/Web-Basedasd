@@ -1,0 +1,217 @@
+/* General Reset */
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #2b2dbf;
+  color: white;
+}
+
+/* Navbar */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #2b2dbf;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  z-index: 1000;
+}
+
+header .logo {
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  color: #ffcc00;
+}
+
+/* Hero Section */
+.hero {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  padding: 100px 20px 20px;
+}
+
+.logo-img {
+  width: 120px;
+  margin-bottom: 20px;
+}
+
+.hero h2 {
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.hero h1 {
+  font-size: 36px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.hero p {
+  font-size: 16px;
+  margin: 15px 0;
+  line-height: 1.6;
+}
+
+button {
+  margin-top: 20px;
+  padding: 12px 30px;
+  font-size: 16px;
+  border: none;
+  border-radius: 25px;
+  background: white;
+  color: black;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #ffcc00;
+  color: #000;
+}
+
+/* Sections */
+.section {
+  min-height: 100vh;
+  padding: 100px 20px 50px;
+  background: #2b2dbf;
+  text-align: center;
+}
+
+.section.alt {
+  background: #1a1a99;
+}
+
+.section h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.section p, .section ul {
+  font-size: 18px;
+  max-width: 700px;
+  margin: auto;
+}
+
+.section ul {
+  list-style: disc;
+  text-align: left;
+  margin-top: 15px;
+}
+
+/* Footer */
+footer {
+  background: #111166;
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+/* Services Section */
+.services {
+  background: #6c63ff;
+  color: white;
+  padding: 80px 0;
+  min-height: 100vh; /* Make it take up full height of the screen */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.services h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.services .subtitle {
+  font-size: 16px;
+  margin-bottom: 40px;
+  color: #ddd;
+}
+
+.services-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 60px;
+}
+
+.service-card {
+  background: white;
+  color: black;
+  width: 300px;
+  padding: 30px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.service-card img {
+  width: 60px;
+  margin-bottom: 20px;
+}
+
+.service-card h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.service-card p {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.proceed-btn {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.proceed-btn:hover {
+  background: #0056b3;
+}
