@@ -94,7 +94,7 @@
     .hero p {
       font-size: 18px;
       margin: 15px 0;
-      margin-left: 35px;
+      margin-left: 150px;
       line-height: 1.6;
       max-width: 700px;
       text-align: center;
@@ -356,3 +356,48 @@
         max-width: 320px;
       }
       }
+/* About Section with White Gradient Background */
+#about {
+  min-height: 100vh;
+  padding: 100px 20px 50px;
+  background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(245, 245, 245, 0.5)),
+              url("C:/Users/Administrator/Documents/code ni davs/image/about.png") no-repeat center center/cover;
+  text-align: center;
+  color: #2b4c8c; /* default theme color */
+}
+
+#about h2 {
+  color: #1e3a6d; /* navy blue for title */
+}
+
+#about .about-text p {
+  color: #222; /* dark gray for readability */
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+#about .about-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  max-width: 1100px;
+  margin: 40px auto;
+}
+
+/* Barangay Office Image Container */
+#about .about-image {
+  flex: 1;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+  background: #2b4c8c; /* theme blue background */
+  padding: 10px;
+}
+
+#about .about-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+}
