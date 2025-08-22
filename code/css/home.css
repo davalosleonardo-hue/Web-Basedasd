@@ -67,8 +67,12 @@
       padding: 100px 20px 20px;
       background: linear-gradient(rgba(43, 76, 140, 0.8), rgba(43, 76, 140, 0.8)), url("C:/Users/Administrator/Documents/code ni davs/image/bg.png") no-repeat center center/cover;
       color: white;
+    animation: moveBg 50s ease-in-out infinite alternate;
     }
-
+@keyframes moveBg {
+  0%   { background-position: 00% 00%; }
+  100% { background-position: 100% 100%; }
+}
     .logo-img {
       width: 120px;
       margin-bottom: 20px;
@@ -360,10 +364,11 @@
 #about {
   min-height: 100vh;
   padding: 100px 20px 50px;
-  background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(245, 245, 245, 0.5)),
+  background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(245, 245, 245, 0.7)),
               url("C:/Users/Administrator/Documents/code ni davs/image/about.png") no-repeat center center/cover;
   text-align: center;
   color: #2b4c8c; /* default theme color */
+    animation: moveBg 50s ease-in-out infinite alternate;
 }
 
 #about h2 {
@@ -401,3 +406,4 @@
   border-radius: 8px;
   display: block;
 }
+
